@@ -37,7 +37,7 @@ general:
     
 test:
   override:
-    - ./gradlew assembleRelease
+    - ./gradlew assembleDebug
 
 deployment:
   branch: develop
