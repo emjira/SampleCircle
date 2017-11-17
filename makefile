@@ -7,11 +7,11 @@ build:
 	mkdir ./artefacts
 
 	$(info Creating the build...)
-	rm -rf ./app/build/outputs/apk/dev/debug
+	rm -rf ./app/build/outputs/apk/debug
 	sed -i -e 's/versionCode .*$$/versionCode $(BUILD_NUM)/' ./app/build.gradle
 	./gradlew assembleDebug
 
 	$(info Copying the APK to the artefacts folder...)
-	cp -r ./app/build/outputs/apk/dev/debug/app-debug.apk ./artefacts/com.tuc.trueid.apk
+	cp -r ./app/build/outputs/apk/debug/app-debug.apk ./artefacts/samplecircleci.apk
 
 .PHONY: build
