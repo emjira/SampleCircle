@@ -38,8 +38,3 @@ general:
 test:
   override:
     - ./gradlew assembleDebug
-
-deployment:
-  branch: develop
-      commands:
-        - make deploy
