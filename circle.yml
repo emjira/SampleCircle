@@ -37,4 +37,4 @@ general:
     
 test:
   override:
-    - ./gradlew assembleDebug
+    - make build
