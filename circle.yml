@@ -26,9 +26,8 @@ dependencies:
     - echo y | sudo apt-get update
     - echo y | sudo apt-get install openjdk-8-jre
 
-    - echo y | sudo apt-get install
-    - echo y | sudo gem install rubygems-update
-    - echo y | rvm install ruby-2.1.4
+    - echo y | apt-get install ruby2.1.4
+    - echo y | update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.1.4
     - echo y | sudo gem install fastlane
 
   cache_directories:
