@@ -26,7 +26,7 @@ dependencies:
     - echo y | sudo apt-get update
     - echo y | sudo apt-get install openjdk-8-jre
 
-    - sudo gem install fastlane -NV
+    - echo y | sudo gem install fastlane
 
   cache_directories:
     - /usr/local/android-sdk-linux/tools
