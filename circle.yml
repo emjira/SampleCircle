@@ -6,7 +6,12 @@ machine:
     JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
     
   java:
-      version: openjdk8  
+      version: openjdk8
+
+  pre:
+    - brew remove ruby20
+    - brew install ruby
+    - gem install bundler
 
 # Make sure CircleCI has the correct version of the Android Build Tools.
 
@@ -26,11 +31,8 @@ dependencies:
     - echo y | sudo apt-get update
     - echo y | sudo apt-get install openjdk-8-jre
 
-    - echo y | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    - echo y | curl -sSL https://get.rvm.io | bash -s stable --ruby
-    - echo y | rvm install 2.2
-    - echo y | rvm use 2.2 --default
-
+    - echo y | rvm install 2.1.0
+    - echo y | rvm use 2.1.0 --default
     - echo y | sudo gem install fastlane
 
   cache_directories:
