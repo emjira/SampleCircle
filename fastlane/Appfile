@@ -1,0 +1,2 @@
+json_key_file "GooglePlayAndroidDeveloper-circleci.json" # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name "com.neversaybugs.samplecircleci" # e.g. com.krausefx.app

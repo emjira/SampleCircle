@@ -1,4 +1,4 @@
-package com.naversaybugs.samplecircleci;
+package com.neversaybugs.samplecircleci;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

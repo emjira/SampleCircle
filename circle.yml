@@ -40,3 +40,8 @@ general:
 test:
   override:
     - make build
+
+deployment:
+  branch: develop
+  commands:
+    - fastlane deploy
