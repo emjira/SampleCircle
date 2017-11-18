@@ -8,11 +8,6 @@ machine:
   java:
       version: openjdk8
 
-  pre:
-    - brew remove ruby20
-    - brew install ruby
-    - gem install bundler
-
 # Make sure CircleCI has the correct version of the Android Build Tools.
 
 dependencies:
@@ -31,6 +26,7 @@ dependencies:
     - echo y | sudo apt-get update
     - echo y | sudo apt-get install openjdk-8-jre
 
+    - echo y | sudo gem install rubygems-update
     - echo y | rvm install 2.1.0
     - echo y | rvm use 2.1.0 --default
     - echo y | sudo gem install fastlane
