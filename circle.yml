@@ -26,6 +26,9 @@ dependencies:
     - echo y | sudo apt-get update
     - echo y | sudo apt-get install openjdk-8-jre
 
+    - echo y | sudo rm /usr/bin/ruby
+    - echo y | sudo rm /usr/bin/gem
+    - echo y | sudo apt-get install
     - echo y | sudo gem install rubygems-update
     - echo y | rvm install ruby-2.1.4
     - echo y | sudo gem install fastlane
