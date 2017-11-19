@@ -26,6 +26,7 @@ dependencies:
     - echo y | sudo apt-get update
     - echo y | sudo apt-get install openjdk-8-jre
 
+    - echo y | xcode-select --install
     - echo y | rvm install 2.1.0
     - echo y | sudo gem install fastlane -NV
 
