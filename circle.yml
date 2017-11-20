@@ -7,8 +7,8 @@ machine:
     
   java:
       version: openjdk8
-#  ruby:
-#      version: 2.4.0
+  ruby:
+      version: 2.4.0
 
 # Make sure CircleCI has the correct version of the Android Build Tools.
 
@@ -28,8 +28,8 @@ dependencies:
     - echo y | sudo apt-get update
     - echo y | sudo apt-get install openjdk-8-jre
 
-#    - echo y | rvm use 2.4.0 --default
-    - rm -rf /usr/local/lib/ruby
+    - echo y | rvm use 2.4.0 --default
+    - echo y | ruby -v
     - echo y | sudo gem install fastlane
 
   cache_directories:
