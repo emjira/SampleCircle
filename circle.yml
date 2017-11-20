@@ -28,6 +28,7 @@ dependencies:
 
     - echo y | sudo ruby -v
     - echo y | ruby -v
+    - echo y | sudo rvm use 2.2.6 --default
     - echo y | sudo gem install fastlane
 
   cache_directories:
