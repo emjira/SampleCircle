@@ -28,7 +28,9 @@ dependencies:
 
     - echo y | ruby -v
     - echo y | sudo ruby -v
-    - echo y | sudo gem ruby -v
+    - echo y | sudo gem install rubygems-update
+    - echo y | ruby -v
+    - echo y | sudo ruby -v
     - echo y | sudo gem install fastlane
 
   cache_directories:
