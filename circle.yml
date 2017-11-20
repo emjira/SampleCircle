@@ -31,7 +31,7 @@ dependencies:
     - echo y | sudo gem install rubygems-update
     - echo y | ruby -v
     - echo y | sudo ruby -v
-    - echo y | sudo gem install fastlane
+    - echo y | gem install fastlane
 
   cache_directories:
     - /usr/local/android-sdk-linux/tools
