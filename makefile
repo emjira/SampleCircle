@@ -10,9 +10,9 @@ build:
 	rm -rf ./app/build/outputs/apk/debug
 	# sed -i -e 's/versionCode .*$$/versionCode $(BUILD_NUM)/' ./app/build.gradle
 	./gradlew test
-	./gradlew assembleDebug
+	./gradlew assembleRelease
 
 	$(info Copying the APK to the artefacts folder...)
-	cp -r ./app/build/outputs/apk/debug/app-debug.apk ./artefacts/samplecircleci.apk
+	cp -r ./app/build/outputs/apk/release/app-release.apk ./artefacts/samplecircleci.apk
 
 .PHONY: build
