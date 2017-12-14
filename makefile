@@ -8,7 +8,7 @@ build:
 
 	$(info Creating the build...)
 	rm -rf ./app/build/outputs/apk/debug
-	sed -i -e 's/versionCode .*$$/versionCode $(BUILD_NUM)/' ./app/build.gradle
+	#sed -i -e 's/versionCode .*$$/versionCode $(BUILD_NUM)/' ./app/build.gradle
 	./gradlew assembleDebug
 
 	$(info Copying the APK to the artefacts folder...)
