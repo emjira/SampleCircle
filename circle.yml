@@ -39,9 +39,9 @@ general:
     
 test:
   override:
-    - make build
+    - make run_unit_test
 
 deployment:
   branch: develop
   commands:
-    - fastlane deploy
+    - fastlane deploy_to_playstore_alpha
