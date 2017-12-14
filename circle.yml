@@ -39,7 +39,7 @@ general:
     
 test:
   override:
-    - make run_unit_test
+    - make build
 
 deployment:
   branch: develop

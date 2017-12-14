@@ -36,8 +36,8 @@ platform :android do
 
   desc "Deploy a new version to the Google Play"
   lane :deploy_to_playstore_alpha do
-    gradle(task: "assembleRelease")
-    supply(track: "alpha", apk: "./app/build/outputs/apk/release/app-release.apk")
+    # gradle(task: "assembleRelease")
+    supply(track: "alpha", apk: "./artefacts/samplecircleci.apk")
   end
 
   # You can define as many lanes as you want
