@@ -22,7 +22,7 @@ jobs:
           command: ./gradlew lint test
       - run:
           name: Build APK
-          command: ./gradlew assembleRelease
+          command: make build
       - store_artifacts:
           path: app/build/reports
           destination: reports
