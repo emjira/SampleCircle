@@ -1,8 +1,6 @@
 # Set up environment variables
 machine:
   environment:
-    BUILD_NUM: $CIRCLE_BUILD_NUM
-    BRANCH: $CIRCLE_BRANCH
     JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
     
   java:
