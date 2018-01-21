@@ -28,14 +28,3 @@ jobs:
           destination: reports
       - store_test_results:
           path: app/build/test-results
-
-workflows:
-  version:
-  build:
-    jobs:
-      config:
-        filters:
-          branches:
-            only: develop
-
-
