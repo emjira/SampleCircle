@@ -17,9 +17,6 @@ jobs:
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-      - filters:
-          branches:
-            only: develop
       - run:
           name: Run Tests
           command: ./gradlew lint test
@@ -31,4 +28,14 @@ jobs:
           destination: reports
       - store_test_results:
           path: app/build/test-results
+
+workflows:
+  version:
+  build:
+    jobs:
+      config:
+        filters:
+          branches:
+            only: develop
+
 
