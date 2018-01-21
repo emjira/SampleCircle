@@ -18,6 +18,10 @@ jobs:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
+          filters:
+            branches:
+              only: develop
+      - run:
           name: Run Tests
           command: ./gradlew lint test
       - run:
